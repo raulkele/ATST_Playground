@@ -1,7 +1,6 @@
 package SerenityWithJUnit.steps.serenity;
 
 import SerenityWithJUnit.pages.BooksAndMusicPage;
-import SerenityWithJUnit.pages.NavigationPage;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
@@ -26,6 +25,6 @@ public class BooksSteps {
 
     @Step
     public void cant_find_item(String itemName) {
-        assertThat(booksAndMusicPage.getProductNames(), not(hasItem(itemName.toLowerCase(Locale.ROOT))));
+        assertThat(booksAndMusicPage.getProductNames(), not(hasItem(containsString(itemName.toLowerCase(Locale.ROOT)))));
     }
 }

@@ -22,7 +22,7 @@ public class SalesPage extends PageObject {
     @FindBy(className = "page-title")
     private WebElementFacade pageTitle;
 
-    public Boolean is_books_and_music_page_loaded(){
+    public Boolean is_sales_page_loaded(){
         return products.waitUntilVisible().isVisible() && Objects.equals(pageTitle.getText(), "SALE");
     }
 

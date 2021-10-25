@@ -1,0 +1,4 @@
+Test the following three functionalities of the MagentoApp.
+- Look for an item in the Books and Music category of products.
+- Log in and out of the application with a user account.
+- Check the validity of the sales on the sales page.
